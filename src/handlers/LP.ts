@@ -51,6 +51,7 @@ export async function takeLPSnapshot(ctx: EthContext, lpAddress: string): Promis
 
   // Process liquid lockers
   for (const liquidLocker of PENDLE_POOL_ADDRESSES.LIQUID_LOCKERS) {
+    if (liquidLocker.lpAddress != lpAddress) continue;
     const liquidLockerBal = await marketContract.balanceOf(
       liquidLocker.address
     );
@@ -67,6 +68,7 @@ export async function takeLPSnapshot(ctx: EthContext, lpAddress: string): Promis
       );
       for (let i = 0; i < allUsers.length; i++) {
         const userBal = allUserReceiptTokenBalances[i];
+        if (userBal == 0n) continue;
         const userBoostedHolding =
           (userBal * liquidLockerActiveBal) / liquidLockerBal;
         allUserShares[i] += userBoostedHolding;

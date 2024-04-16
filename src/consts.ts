@@ -43,21 +43,25 @@ export const PENDLE_POOL_ADDRESSES = {
             // penpie
             address: "0x6e799758cee75dae3d84e09d40dc416ecf713652",
             receiptToken: "0xb86f1ee5094e1ae3fec9c7d9ce61e5deaed7e3c2",
+            lpAddress: "0xbce250b572955c044c0c4e75b2fa8016c12cabf9",
         },
         {
             // equilibira
             address: "0x64627901dadb46ed7f275fd4fc87d086cff1e6e3",
             receiptToken: "0x59802239640d082d030cd45854a142e2f696545e",
+            lpAddress: "0xbce250b572955c044c0c4e75b2fa8016c12cabf9",
         },
         {
             // penpie
             address: "0x6e799758cee75dae3d84e09d40dc416ecf713652",
             receiptToken: "0x8bd67dd27c379de76753e2e552f4614b0ae4327a",
+            lpAddress: "0x38100a480dbed278b0fe57ba80a75498a7dc5bb1",
         },
         {
             // equilibira
             address: "0x64627901dadb46ed7f275fd4fc87d086cff1e6e3",
             receiptToken: "0x4e7322911261afe0b9e89d47fc249c148330c2af",
+            lpAddress: "0x38100a480dbed278b0fe57ba80a75498a7dc5bb1",
         }
     ]
 }
